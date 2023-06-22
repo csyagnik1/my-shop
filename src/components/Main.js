@@ -4,6 +4,7 @@ import { productList } from "../redux/productAction";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
 import { Button } from "@mui/material";
+import Mycorousel from "./Mycorousel";
 
 function Main() {
   const dispatch = useDispatch();
@@ -16,14 +17,8 @@ function Main() {
   return (
     <div className="w3-center">
 
-      <img src="images/banner.png" width={'100%'} alt=""/>
-      {/* <div>
-        <button id="btn3"onClick={() => dispatch(emptyCart())}>EMPTY_CART</button>
-        </div>
+      <Mycorousel />
 
-        <div>
-        <button id="btn4"onClick={() => dispatch(productList())}>Get Product List</button>
-        </div> */}
 
       <div className="w3-pannel w3-center w3-xlarge">
         <span className="w3-red w3-padding w3-round-xlarge">Products</span>
@@ -45,10 +40,12 @@ function Main() {
               <Button variant="contained" onClick={() => dispatch(addToCart(item))} className="w3-margin">Add to Cart</Button>
               <Button variant="contained" color="error" onClick={() => dispatch(remove_from_cart(item.id))}>Remove</Button>
             </div>
+
           </div>)
         }
 
       </div>
+      
 
 
     </div>
