@@ -24,25 +24,23 @@ const Mycorousel = () => {
     };
     return (
 
-        <div className='banner' style={{"text-align": "center" }} >
-            <Carousel 
-            responsive={responsive}
-            
-            autoPlay={true} 
-            autoPlaySpeed={3000}
-            rewind={true}
-            rewindWithAnimation={true}
-                             
-                      
-            showDots={true}>
-                <div><img src='images/corousel/1.png' alt='img' style={{"width": "100%" }}/>  </div>
-                <div><img src='images/corousel/2.png' alt='img' style={{"width": "100%" }}/> </div>
-                <div><img src='images/corousel/3.png' alt='img' style={{"width": "100%" }}/> </div>
-                <div><img src='images/corousel/4.png' alt='img' style={{"width": "100%" }}/> </div>
-                <div><img src='images/corousel/5.png' alt='img' style={{"width": "100%" }}/> </div>
-                <div><img src='images/corousel/6.png' alt='img' style={{"width": "100%" }}/> </div>
-                
-                
+        <div className='banner' style={{ "text-align": "center" }} >
+            <Carousel
+                responsive={responsive}
+                autoPlay={true}
+                autoPlaySpeed={3000}
+                rewind={true}
+                rewindWithAnimation={true}
+                showDots={true}>
+
+                <div><img src='images/corousel/1.png' alt='img' style={{ "width": "100%" }} />  </div>
+                <div><img src='images/corousel/2.png' alt='img' style={{ "width": "100%" }} /> </div>
+                <div><img src='images/corousel/3.png' alt='img' style={{ "width": "100%" }} /> </div>
+                <div><img src='images/corousel/4.png' alt='img' style={{ "width": "100%" }} /> </div>
+                <div><img src='images/corousel/5.png' alt='img' style={{ "width": "100%" }} /> </div>
+                <div><img src='images/corousel/6.png' alt='img' style={{ "width": "100%" }} /> </div>
+
+
             </Carousel>;
 
         </div>
